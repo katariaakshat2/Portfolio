@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -25,215 +26,6 @@
 
 <link rel="stylesheet" href="styles.css">
 
-
-<!-- Certificate section styling -->
-<style>
-
-/* ==================== CERTIFICATES ==================== */
-
-.certificates__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-top: 50px;
-}
-
-.certificate {
-  position: relative;
-  overflow: hidden;
-
-  border: 1px solid rgba(255,255,255,0.12);
-
-  background: rgba(255,255,255,0.025);
-
-  transition:
-    transform 0.35s ease,
-    border-color 0.35s ease,
-    background 0.35s ease;
-}
-
-.certificate:hover {
-  transform: translateY(-8px);
-
-  border-color: rgba(255,255,255,0.35);
-
-  background: rgba(255,255,255,0.05);
-}
-
-
-/* Certificate picture */
-
-.certificate__image {
-  position: relative;
-
-  width: 100%;
-
-  aspect-ratio: 16 / 11;
-
-  overflow: hidden;
-
-  background: #111;
-}
-
-.certificate__image img {
-  width: 100%;
-  height: 100%;
-
-  display: block;
-
-  object-fit: cover;
-
-  transition:
-    transform 0.5s ease,
-    filter 0.5s ease;
-}
-
-.certificate:hover .certificate__image img {
-  transform: scale(1.04);
-
-  filter: brightness(0.55);
-}
-
-
-/* View button */
-
-.certificate__overlay {
-  position: absolute;
-
-  inset: 0;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  opacity: 0;
-
-  transition: opacity 0.35s ease;
-}
-
-.certificate:hover .certificate__overlay {
-  opacity: 1;
-}
-
-.certificate__view {
-  padding: 12px 20px;
-
-  border: 1px solid rgba(255,255,255,0.7);
-
-  background: rgba(0,0,0,0.55);
-
-  color: white;
-
-  text-decoration: none;
-
-  font-family: "JetBrains Mono", monospace;
-
-  font-size: 12px;
-
-  letter-spacing: 0.05em;
-
-  transition:
-    background 0.25s ease,
-    color 0.25s ease;
-}
-
-.certificate__view:hover {
-  background: white;
-
-  color: black;
-}
-
-
-/* Certificate information */
-
-.certificate__content {
-  padding: 23px;
-}
-
-.certificate__number {
-  margin: 0 0 10px;
-
-  font-family: "JetBrains Mono", monospace;
-
-  font-size: 11px;
-
-  letter-spacing: 0.12em;
-
-  opacity: 0.5;
-}
-
-.certificate__title {
-  margin: 0 0 10px;
-
-  font-family: "Space Grotesk", sans-serif;
-
-  font-size: 20px;
-
-  line-height: 1.25;
-
-  font-weight: 600;
-}
-
-.certificate__issuer {
-  margin: 0 0 6px;
-
-  font-size: 14px;
-
-  opacity: 0.8;
-}
-
-.certificate__date {
-  margin: 0;
-
-  font-family: "JetBrains Mono", monospace;
-
-  font-size: 12px;
-
-  opacity: 0.55;
-}
-
-.certificate__id {
-  margin-top: 10px;
-
-  font-family: "JetBrains Mono", monospace;
-
-  font-size: 10px;
-
-  opacity: 0.45;
-}
-
-
-/* Certificate responsive layout */
-
-@media (max-width: 1000px) {
-
-  .certificates__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-}
-
-
-@media (max-width: 650px) {
-
-  .certificates__grid {
-    grid-template-columns: 1fr;
-
-    gap: 22px;
-
-    margin-top: 40px;
-  }
-
-  .certificate__title {
-    font-size: 19px;
-  }
-
-}
-
-</style>
-
 </head>
 
 
@@ -258,74 +50,38 @@
   <nav class="nav__links">
 
     <a href="#about">
-
-      <span class="nav__num">01</span>
-
-      About
-
+      <span class="nav__num">01</span>About
     </a>
-
 
     <a href="#skills">
-
-      <span class="nav__num">02</span>
-
-      Skills
-
+      <span class="nav__num">02</span>Skills
     </a>
-
 
     <a href="#projects">
-
-      <span class="nav__num">03</span>
-
-      Projects
-
+      <span class="nav__num">03</span>Projects
     </a>
-
 
     <a href="#education">
-
-      <span class="nav__num">04</span>
-
-      Education
-
+      <span class="nav__num">04</span>Education
     </a>
-
 
     <a href="#training">
-
-      <span class="nav__num">05</span>
-
-      Training
-
+      <span class="nav__num">05</span>Training
     </a>
-
 
     <a href="#certificates">
-
-      <span class="nav__num">06</span>
-
-      Certificates
-
+      <span class="nav__num">06</span>Certificates
     </a>
 
-
     <a href="#contact">
-
-      <span class="nav__num">07</span>
-
-      Contact
-
+      <span class="nav__num">07</span>Contact
     </a>
 
   </nav>
 
 
   <a class="nav__cta" href="#contact">
-
     Get in touch
-
   </a>
 
 
@@ -355,7 +111,6 @@
 
 <section class="hero" id="hero">
 
-
   <div class="hero__field">
 
     <canvas id="netCanvas"></canvas>
@@ -378,7 +133,6 @@
     <h1 class="hero__title">
 
       Akshat<br>
-
       Kataria<span class="hero__cursor">_</span>
 
     </h1>
@@ -458,16 +212,12 @@
   <div class="section__head">
 
     <span class="section__num">
-
       01
-
     </span>
 
 
     <h2 class="section__title">
-
       About
-
     </h2>
 
   </div>
@@ -527,16 +277,12 @@
   <div class="section__head">
 
     <span class="section__num">
-
       02
-
     </span>
 
 
     <h2 class="section__title">
-
       Skills
-
     </h2>
 
   </div>
@@ -549,9 +295,7 @@
 
 
       <h3 class="skill-group__title">
-
         Languages
-
       </h3>
 
 
@@ -574,9 +318,7 @@
 
 
       <h3 class="skill-group__title">
-
         Tools &amp; Platforms
-
       </h3>
 
 
@@ -601,9 +343,7 @@
 
 
       <h3 class="skill-group__title">
-
         Data &amp; ML
-
       </h3>
 
 
@@ -628,9 +368,7 @@
 
 
       <h3 class="skill-group__title">
-
         Soft Skills
-
       </h3>
 
 
@@ -666,16 +404,12 @@
   <div class="section__head">
 
     <span class="section__num">
-
       03
-
     </span>
 
 
     <h2 class="section__title">
-
       Projects
-
     </h2>
 
   </div>
@@ -690,9 +424,7 @@
 
 
       <div class="project__index">
-
         P1
-
       </div>
 
 
@@ -700,9 +432,7 @@
 
 
         <h3 class="project__title">
-
           Crop Recommendation System
-
         </h3>
 
 
@@ -755,9 +485,7 @@
 
 
       <div class="project__index">
-
         P2
-
       </div>
 
 
@@ -765,9 +493,7 @@
 
 
         <h3 class="project__title">
-
           Pizza Sales Dashboard
-
         </h3>
 
 
@@ -817,9 +543,7 @@
 
 
       <div class="project__index">
-
         P3
-
       </div>
 
 
@@ -827,9 +551,7 @@
 
 
         <h3 class="project__title">
-
           Hotel Management System
-
         </h3>
 
 
@@ -890,16 +612,12 @@
   <div class="section__head">
 
     <span class="section__num">
-
       04
-
     </span>
 
 
     <h2 class="section__title">
-
       Education
-
     </h2>
 
   </div>
@@ -920,9 +638,7 @@
 
 
         <p class="timeline__period">
-
           Aug 2021 — Present
-
         </p>
 
 
@@ -963,9 +679,7 @@
 
 
         <p class="timeline__period">
-
           Mar 2024 — May 2025
-
         </p>
 
 
@@ -1004,9 +718,7 @@
 
 
         <p class="timeline__period">
-
           Mar 2022 — May 2023
-
         </p>
 
 
@@ -1049,16 +761,12 @@
   <div class="section__head">
 
     <span class="section__num">
-
       05
-
     </span>
 
 
     <h2 class="section__title">
-
       Training
-
     </h2>
 
   </div>
@@ -1070,9 +778,13 @@
     <p class="about__lead">
 
       Data Science using Python
+
       <br>
+
       Cipher Schools
+
       <br>
+
       Sep 2025 — Feb 2026
 
     </p>
@@ -1084,25 +796,26 @@
       <p>
 
         Performed Exploratory Data Analysis using NumPy and
-        Pandas, working with datasets and improving the
-        data-preprocessing workflow.
+        Pandas, leading to improved data preprocessing and
+        analysis workflows.
 
       </p>
 
 
       <p>
 
-        Developed, trained, and evaluated machine-learning models
-        including Linear Regression, KNN, SVM, Decision Trees,
-        K-Means, and Ensemble Methods using Scikit-learn.
+        Developed, trained, and evaluated Machine Learning
+        models including Linear Regression, KNN, SVM,
+        Decision Trees, K-Means, and Ensemble Methods
+        using Scikit-learn.
 
       </p>
 
 
       <p>
 
-        Applied feature engineering techniques to improve
-        machine-learning model performance for predictive analysis.
+        Employed feature engineering techniques to improve
+        model performance for predictive analysis.
 
       </p>
 
@@ -1125,92 +838,47 @@
 
   <div class="section__head">
 
+
     <span class="section__num">
-
       06
-
     </span>
 
 
     <h2 class="section__title">
-
       Certificates
-
     </h2>
+
 
   </div>
 
 
 
-  <div class="certificates__grid">
+  <div class="projects__list">
 
 
-    <!-- =====================================================
-         CERTIFICATE 1
-    ====================================================== -->
+    <!-- CERTIFICATE 1 -->
 
-    <article class="certificate">
+    <article class="project">
 
 
-      <div class="certificate__image">
-
-
-        <img
-          src="certificates/effective-time-management.jpg"
-          alt="Akshat Kataria Effective Time Management Certificate"
-          loading="lazy"
-        >
-
-
-        <div class="certificate__overlay">
-
-
-          <a
-            href="certificates/effective-time-management.jpg"
-            target="_blank"
-            rel="noopener"
-            class="certificate__view"
-          >
-
-            View Certificate ↗
-
-          </a>
-
-
-        </div>
-
-
+      <div class="project__index">
+        C1
       </div>
 
 
-
-      <div class="certificate__content">
-
-
-        <p class="certificate__number">
-
-          CERT. 01
-
-        </p>
+      <div class="project__body">
 
 
-        <h3 class="certificate__title">
+        <h3 class="project__title">
 
           Effective Time Management
 
         </h3>
 
 
-        <p class="certificate__issuer">
+        <p class="project__desc">
 
-          Tech Veda
-
-        </p>
-
-
-        <p class="certificate__date">
-
-          29 October 2025
+          Tech Veda · October 2025
 
         </p>
 
@@ -1222,79 +890,29 @@
 
 
 
-    <!-- =====================================================
-         CERTIFICATE 2
-    ====================================================== -->
+    <!-- CERTIFICATE 2 -->
 
-    <article class="certificate">
+    <article class="project">
 
 
-      <div class="certificate__image">
-
-
-        <img
-          src="certificates/introduction-to-python.png"
-          alt="Akshat Kataria Saylor Academy Introduction to Python Certificate"
-          loading="lazy"
-        >
-
-
-        <div class="certificate__overlay">
-
-
-          <a
-            href="certificates/introduction-to-python.png"
-            target="_blank"
-            rel="noopener"
-            class="certificate__view"
-          >
-
-            View Certificate ↗
-
-          </a>
-
-
-        </div>
-
-
+      <div class="project__index">
+        C2
       </div>
 
 
-
-      <div class="certificate__content">
-
-
-        <p class="certificate__number">
-
-          CERT. 02
-
-        </p>
+      <div class="project__body">
 
 
-        <h3 class="certificate__title">
+        <h3 class="project__title">
 
           CS105: Introduction to Python
 
         </h3>
 
 
-        <p class="certificate__issuer">
+        <p class="project__desc">
 
-          Saylor Academy
-
-        </p>
-
-
-        <p class="certificate__date">
-
-          3 February 2026
-
-        </p>
-
-
-        <p class="certificate__id">
-
-          Certificate ID: 9765012536AK
+          Saylor Academy · February 2026
 
         </p>
 
@@ -1306,72 +924,29 @@
 
 
 
-    <!-- =====================================================
-         CERTIFICATE 3
-    ====================================================== -->
+    <!-- CERTIFICATE 3 -->
 
-    <article class="certificate">
+    <article class="project">
 
 
-      <div class="certificate__image">
-
-
-        <img
-          src="certificates/introduction-to-ai.png"
-          alt="Akshat Kataria Infosys Introduction to Artificial Intelligence Certificate"
-          loading="lazy"
-        >
-
-
-        <div class="certificate__overlay">
-
-
-          <a
-            href="certificates/introduction-to-ai.png"
-            target="_blank"
-            rel="noopener"
-            class="certificate__view"
-          >
-
-            View Certificate ↗
-
-          </a>
-
-
-        </div>
-
-
+      <div class="project__index">
+        C3
       </div>
 
 
-
-      <div class="certificate__content">
-
-
-        <p class="certificate__number">
-
-          CERT. 03
-
-        </p>
+      <div class="project__body">
 
 
-        <h3 class="certificate__title">
+        <h3 class="project__title">
 
           Introduction to Artificial Intelligence
 
         </h3>
 
 
-        <p class="certificate__issuer">
+        <p class="project__desc">
 
-          Infosys Springboard
-
-        </p>
-
-
-        <p class="certificate__date">
-
-          26 March 2026
+          Infosys Springboard · March 2026
 
         </p>
 
@@ -1399,16 +974,12 @@
 
 
     <span class="section__num">
-
       07
-
     </span>
 
 
     <h2 class="section__title">
-
       Contact
-
     </h2>
 
 
@@ -1438,16 +1009,12 @@
       >
 
         <span class="contact__label">
-
           Email
-
         </span>
 
 
         <span class="contact__value">
-
           katariaakshat2@gmail.com
-
         </span>
 
       </a>
@@ -1462,16 +1029,12 @@
       >
 
         <span class="contact__label">
-
           Phone
-
         </span>
 
 
         <span class="contact__value">
-
           +91 63776 90311
-
         </span>
 
       </a>
@@ -1488,16 +1051,12 @@
       >
 
         <span class="contact__label">
-
           GitHub
-
         </span>
 
 
         <span class="contact__value">
-
           katariaakshat2 ↗
-
         </span>
 
       </a>
@@ -1514,16 +1073,12 @@
       >
 
         <span class="contact__label">
-
           LinkedIn
-
         </span>
 
 
         <span class="contact__value">
-
           Akshat Kataria ↗
-
         </span>
 
       </a>
@@ -1571,4 +1126,5 @@
 <script src="script.js"></script>
 
 </body>
+
 </html>
